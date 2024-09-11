@@ -68,7 +68,6 @@ app.post("/subscribe", (req, res) => {
             return res.status(500).send("Failed to subscribe.");
         }
 
-        // Send Welcome Email
         sendWelcomeEmail(email);
 
         res.status(200).send("Subscription successful.");
